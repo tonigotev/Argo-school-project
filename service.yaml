@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: blackhole-service
 spec:
+  type: NodePort   # <- тук е правилното място
   selector:
     app: blackhole
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: ClusterIP
