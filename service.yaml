@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: blackhole-service
 spec:
-  type: NodePort   # <- тук е правилното място
+  type: NodePort
   selector:
     app: blackhole
   ports:
